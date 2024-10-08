@@ -8,8 +8,9 @@
             int cats = 20;
             int dogs = 15;
             string dinosaur;
-            string please, Please, PLEASE;
+            string please, name;
             int age;
+            double temp;
             Console.WriteLine("People: " + people + " Cats: " + cats + " Dogs: " + dogs);
             if (people < cats)
             {
@@ -54,23 +55,41 @@
             {
                 Console.WriteLine("You're welcome ");
             }
+            Console.WriteLine("Hey man what's your name?");
+            name= Console.ReadLine();
+            Console.WriteLine();
+            Console.WriteLine("How old are you " + name + "?");
+            Console.WriteLine();
             int.TryParse(Console.ReadLine(), out age);
             if (age < 16)
             {
                 Console.WriteLine("You can't drive yet!");
+                Console.WriteLine();
             }
             if (age < 18)
             {
                 Console.WriteLine("You can't vote yet bozo");
+                Console.WriteLine();
             }
             if (age < 25)
             {
-                Console.WriteLine("You can't rent are car yet");
+                Console.WriteLine("You can't rent a car yet");
+                Console.WriteLine();
             }
             if (age > 25)
             {
                 Console.WriteLine("You can do anyhing that's legal");
             }
+            Console.WriteLine("Press ENTER to continue. ");
+            Console.ReadLine();
+            Console.Clear();
+            Console.WriteLine("Hey " + name + " what's the temp that freezes water?");
+            double.TryParse(Console.ReadLine(), out temp);
+            if (temp <= 0)
+            {
+                Console.WriteLine("Wowza man it's prolly freezing temp.");
+            }
+
 
 
         }   

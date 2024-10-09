@@ -85,10 +85,19 @@
             Console.Clear();
             Console.WriteLine("Hey " + name + " what's the temp that freezes water?");
             double.TryParse(Console.ReadLine(), out temp);
-            if (temp <= 0)
+            if (temp == 0)
             {
                 Console.WriteLine("Wowza man it's prolly freezing temp.");
             }
+            if (temp == 32)
+            {
+                Console.WriteLine("Woopdi do man it is 32 degrees Fahrenheit");
+            }
+            if (temp == 273.2)
+            {
+                Console.WriteLine("Holy badonkerz man it is 273.2 degrees Kelvin");
+            }
+
 
 
 
